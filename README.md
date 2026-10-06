@@ -2,7 +2,7 @@
 
 A configurable PyTorch framework for single-label image classification using a pretrained Vision Transformer, learned patch selection, and spatial GraphSAGE. The dataset pipeline is independent of the model. Classes and output channels are inferred from the dataset; no brain-tumor labels are hardcoded.
 
-This refactor follows the component/config/data separation used in [skin-lesion-segmentation-refactored](https://github.com/Arun2005-srm/skin-lesion-segmentation-refactored). The original NeuroSAGE notebook is preserved under `notebooks/`, and its old figures and reports are under `legacy_results/`. Those metrics are from the previous implementation and do not establish performance of the corrected model.
+This project follows the component/config/data separation used in [skin-lesion-segmentation-refactored](https://github.com/Arun2005-srm/skin-lesion-segmentation-refactored).
 
 ## Layout
 
@@ -276,4 +276,4 @@ Selected-patch overlays show retained token locations, not segmentation or valid
 
 The test suite verifies selector classification gradients, CLS initialization, unique selections, graph offsets/batch isolation, component toggles, deterministic splits, patient isolation, duplicate/image validation, binary metrics, cache invalidation, and the complete five-fold/twenty-epoch workflow including generated figures. The full workflow test uses synthetic RGB images and a small custom ViT, with no pretrained downloads. It verifies software behavior and does not measure brain-tumor performance.
 
-Actual BRISC training requires the dataset and a suitable GPU environment. The original notebook's checkpoints are incompatible with the corrected model. Regenerate caches and retrain before reporting results.
+Actual BRISC training requires the dataset and a suitable GPU environment. Train this implementation and evaluate its saved checkpoints before reporting scientific performance.

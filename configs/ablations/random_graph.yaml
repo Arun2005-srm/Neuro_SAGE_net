@@ -1,0 +1,5 @@
+defaults: ../datasets/brisc.yaml
+model:
+  graph: {topology: random}
+training:
+  output_dir: /content/neurosage_runs/brisc_random_graph

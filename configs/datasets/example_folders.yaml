@@ -1,0 +1,6 @@
+defaults: ../default.yaml
+dataset:
+  # Each root contains class-name directories. Paths are relative to this YAML.
+  roots: [/absolute/path/to/my_dataset]
+training:
+  output_dir: ../../runs/my_dataset

@@ -1,0 +1,100 @@
+======================================================================
+⠀ STARTING 5-FOLD CROSS-VALIDATION | Device: cuda
+======================================================================
+
+[FOLD 1/5] Train: 4000 | Val: 1000
+----------------------------------------------------------------------
+📦 Cached Dataset Loaded: 4000 samples | augment=True
+📦 Cached Dataset Loaded: 1000 samples | augment=False
+  Ep  1/20 | [25s] Train: 1.1615/0.5883  Val: 0.7854/0.8910 | lr: 9.9e-05
+  Ep  2/20 | [24s] Train: 0.5424/0.9217  Val: 0.6509/0.9460 | lr: 9.8e-05
+  Ep  3/20 | [25s] Train: 0.4491/0.9680  Val: 0.6400/0.9680 | lr: 9.5e-05
+  Ep  4/20 | [24s] Train: 0.4108/0.9790  Val: 0.6539/0.9710 | lr: 9.0e-05
+  Ep  5/20 | [24s] Train: 0.3907/0.9878  Val: 0.6404/0.9770 | lr: 8.5e-05
+  Ep  6/20 | [23s] Train: 0.3873/0.9900  Val: 0.6424/0.9740 | lr: 7.9e-05
+  Ep  7/20 | [23s] Train: 0.3729/0.9958  Val: 0.6080/0.9830 | lr: 7.3e-05
+  Ep  8/20 | [24s] Train: 0.3722/0.9952  Val: 0.6661/0.9730 | lr: 6.5e-05
+  Ep  9/20 | [24s] Train: 0.3699/0.9945  Val: 0.6471/0.9810 | lr: 5.8e-05
+  Ep 10/20 | [24s] Train: 0.3625/0.9978  Val: 0.6934/0.9850 | lr: 5.0e-05
+  Ep 11/20 | [24s] Train: 0.3623/0.9980  Val: 0.6796/0.9830 | lr: 4.2e-05
+  Ep 12/20 | [24s] Train: 0.3599/0.9990  Val: 0.7050/0.9870 | lr: 3.5e-05
+  └ Early Stop! Best Val Acc: 0.9830
+
+  ✅ Fold 1 Finished & Saved to Drive | Time: 5.2m | Peak Mem: 2543.2 MB
+
+[FOLD 2/5] Train: 4000 | Val: 1000
+----------------------------------------------------------------------
+📦 Cached Dataset Loaded: 4000 samples | augment=True
+📦 Cached Dataset Loaded: 1000 samples | augment=False
+  Ep  1/20 | [24s] Train: 1.1903/0.6010  Val: 0.8662/0.8900 | lr: 9.9e-05
+  Ep  2/20 | [24s] Train: 0.5233/0.9307  Val: 0.7609/0.9510 | lr: 9.8e-05
+  Ep  3/20 | [24s] Train: 0.4340/0.9708  Val: 0.7435/0.9640 | lr: 9.5e-05
+  Ep  4/20 | [24s] Train: 0.4054/0.9822  Val: 0.7642/0.9430 | lr: 9.0e-05
+  Ep  5/20 | [24s] Train: 0.4167/0.9788  Val: 0.7267/0.9730 | lr: 8.5e-05
+  Ep  6/20 | [24s] Train: 0.3927/0.9858  Val: 0.7134/0.9690 | lr: 7.9e-05
+  Ep  7/20 | [24s] Train: 0.3818/0.9912  Val: 0.7137/0.9790 | lr: 7.3e-05
+  Ep  8/20 | [25s] Train: 0.3774/0.9932  Val: 0.6991/0.9780 | lr: 6.5e-05
+  Ep  9/20 | [24s] Train: 0.3666/0.9965  Val: 0.7044/0.9750 | lr: 5.8e-05
+  Ep 10/20 | [24s] Train: 0.3635/0.9978  Val: 0.7428/0.9650 | lr: 5.0e-05
+  Ep 11/20 | [23s] Train: 0.3616/0.9988  Val: 0.7381/0.9770 | lr: 4.2e-05
+  Ep 12/20 | [24s] Train: 0.3597/0.9992  Val: 0.7554/0.9800 | lr: 3.5e-05
+  Ep 13/20 | [23s] Train: 0.3587/0.9992  Val: 0.7851/0.9810 | lr: 2.7e-05
+  └ Early Stop! Best Val Acc: 0.9780
+
+  ✅ Fold 2 Finished & Saved to Drive | Time: 5.6m | Peak Mem: 2542.9 MB
+
+[FOLD 3/5] Train: 4000 | Val: 1000
+----------------------------------------------------------------------
+📦 Cached Dataset Loaded: 4000 samples | augment=True
+📦 Cached Dataset Loaded: 1000 samples | augment=False
+  Ep  1/20 | [25s] Train: 1.0832/0.6408  Val: 0.7576/0.9220 | lr: 9.9e-05
+  Ep  2/20 | [25s] Train: 0.4938/0.9437  Val: 0.7989/0.9260 | lr: 9.8e-05
+  Ep  3/20 | [24s] Train: 0.4301/0.9748  Val: 0.7267/0.9670 | lr: 9.5e-05
+  Ep  4/20 | [24s] Train: 0.4092/0.9812  Val: 0.6660/0.9740 | lr: 9.0e-05
+  Ep  5/20 | [24s] Train: 0.3916/0.9880  Val: 0.6847/0.9770 | lr: 8.5e-05
+  Ep  6/20 | [24s] Train: 0.3802/0.9912  Val: 0.7031/0.9730 | lr: 7.9e-05
+  Ep  7/20 | [24s] Train: 0.3727/0.9945  Val: 0.7053/0.9750 | lr: 7.3e-05
+  Ep  8/20 | [24s] Train: 0.3697/0.9950  Val: 0.7045/0.9850 | lr: 6.5e-05
+  Ep  9/20 | [24s] Train: 0.3666/0.9970  Val: 0.7206/0.9840 | lr: 5.8e-05
+  └ Early Stop! Best Val Acc: 0.9740
+
+  ✅ Fold 3 Finished & Saved to Drive | Time: 4.0m | Peak Mem: 2542.9 MB
+
+[FOLD 4/5] Train: 4000 | Val: 1000
+----------------------------------------------------------------------
+📦 Cached Dataset Loaded: 4000 samples | augment=True
+📦 Cached Dataset Loaded: 1000 samples | augment=False
+  Ep  1/20 | [25s] Train: 1.1196/0.5913  Val: 0.8324/0.8860 | lr: 9.9e-05
+  Ep  2/20 | [25s] Train: 0.5463/0.9210  Val: 0.7276/0.9540 | lr: 9.8e-05
+  Ep  3/20 | [25s] Train: 0.4517/0.9640  Val: 0.7109/0.9570 | lr: 9.5e-05
+  Ep  4/20 | [25s] Train: 0.4219/0.9740  Val: 0.6615/0.9770 | lr: 9.0e-05
+  Ep  5/20 | [24s] Train: 0.3979/0.9835  Val: 0.7005/0.9680 | lr: 8.5e-05
+  Ep  6/20 | [25s] Train: 0.3919/0.9872  Val: 0.7279/0.9740 | lr: 7.9e-05
+  Ep  7/20 | [24s] Train: 0.3738/0.9948  Val: 0.6861/0.9770 | lr: 7.3e-05
+  Ep  8/20 | [24s] Train: 0.3746/0.9935  Val: 0.7242/0.9670 | lr: 6.5e-05
+  Ep  9/20 | [25s] Train: 0.3718/0.9942  Val: 0.7025/0.9830 | lr: 5.8e-05
+  └ Early Stop! Best Val Acc: 0.9770
+
+  ✅ Fold 4 Finished & Saved to Drive | Time: 4.1m | Peak Mem: 2543.7 MB
+
+[FOLD 5/5] Train: 4000 | Val: 1000
+----------------------------------------------------------------------
+📦 Cached Dataset Loaded: 4000 samples | augment=True
+📦 Cached Dataset Loaded: 1000 samples | augment=False
+  Ep  1/20 | [26s] Train: 1.1909/0.6045  Val: 0.8351/0.8550 | lr: 9.9e-05
+  Ep  2/20 | [25s] Train: 0.5616/0.9095  Val: 0.8458/0.9060 | lr: 9.8e-05
+  Ep  3/20 | [25s] Train: 0.4633/0.9530  Val: 0.7134/0.9580 | lr: 9.5e-05
+  Ep  4/20 | [25s] Train: 0.4395/0.9670  Val: 0.6768/0.9720 | lr: 9.0e-05
+  Ep  5/20 | [25s] Train: 0.4128/0.9795  Val: 0.7012/0.9720 | lr: 8.5e-05
+  Ep  6/20 | [25s] Train: 0.3910/0.9882  Val: 0.6854/0.9620 | lr: 7.9e-05
+  Ep  7/20 | [25s] Train: 0.3791/0.9930  Val: 0.6922/0.9790 | lr: 7.3e-05
+  Ep  8/20 | [24s] Train: 0.3761/0.9932  Val: 0.7152/0.9840 | lr: 6.5e-05
+  Ep  9/20 | [24s] Train: 0.3679/0.9965  Val: 0.7134/0.9850 | lr: 5.8e-05
+  └ Early Stop! Best Val Acc: 0.9720
+
+  ✅ Fold 5 Finished & Saved to Drive | Time: 4.1m | Peak Mem: 2544.4 MB
+
+======================================================================
+⠀ CV COMPLETE | Mean Acc: 0.9768 | Total Time: 23.1m
+⠀ Best Fold: 1 (0.9830)
+======================================================================

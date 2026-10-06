@@ -1,0 +1,5 @@
+defaults: ../datasets/brisc.yaml
+model:
+  graph: {enabled: false, pooling: mean_max}
+training:
+  output_dir: /content/neurosage_runs/brisc_no_graph

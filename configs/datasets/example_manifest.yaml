@@ -1,0 +1,13 @@
+defaults: ../default.yaml
+dataset:
+  format: csv
+  manifest: /absolute/path/to/labels.csv
+  # Relative image paths are resolved against the CSV directory or image_root.
+  image_root: null
+  path_column: image_path
+  label_column: label
+  group_column: patient_id
+  split:
+    strategy: group
+training:
+  output_dir: ../../runs/manifest_dataset

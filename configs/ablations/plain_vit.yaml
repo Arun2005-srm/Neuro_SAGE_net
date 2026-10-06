@@ -1,0 +1,7 @@
+defaults: ../datasets/brisc.yaml
+model:
+  selector: {enabled: false}
+  projector: {enabled: false}
+  graph: {enabled: false, pooling: cls}
+training:
+  output_dir: /content/neurosage_runs/brisc_plain_vit

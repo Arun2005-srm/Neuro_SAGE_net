@@ -1,0 +1,10 @@
+defaults: ../default.yaml
+dataset:
+  # Pools the original folders and creates NEW 70/15/15 partitions.
+  # This protocol is not comparable directly to the official BRISC test split.
+  roots:
+    - /content/dataset/train
+    - /content/dataset/test
+  classes: [glioma, meningioma, no_tumor, pituitary]
+training:
+  output_dir: /content/neurosage_runs/brisc

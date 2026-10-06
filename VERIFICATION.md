@@ -15,4 +15,4 @@ Verified on Windows with Python 3.12.14 and CPU PyTorch. Exact top-level depende
 
 One warning originates from a dependency's use of the deprecated `torch.jit.script`; it did not cause a test failure.
 
-This verification establishes software behavior. It does not establish brain-tumor accuracy, CUDA/AMP numerical behavior, or the effectiveness of the architectural changes. Pretrained ImageNet weight downloading/loading was not exercised in the offline tests. The corrected model must be trained and evaluated on the intended real dataset before reporting scientific performance. Original notebook metrics are retained only as legacy artifacts.
+This verification establishes software behavior. It does not establish brain-tumor accuracy, CUDA/AMP numerical behavior, or the effectiveness of the architectural changes. Pretrained ImageNet weight downloading/loading was not exercised in the offline tests. The model must be trained and evaluated on the intended real dataset before reporting scientific performance.

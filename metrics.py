@@ -39,12 +39,10 @@ def classification_metrics(labels, probabilities, classes, loss=None):
 
 def format_epoch(epoch, total, train, val):
     def summary(metrics):
-        return (f"Acc {metrics['accuracy']:.4f} / Loss {metrics['loss']:.4f} | "
-                f"Precision {metrics['macro_precision']:.4f} | Recall {metrics['macro_recall']:.4f} | "
-                f"F1 {metrics['macro_f1']:.4f} | BalancedAcc {metrics['balanced_accuracy']:.4f}")
+        return (f"Acc {metrics['accuracy']:.2%} / Loss {metrics['loss']:.4f}")
     lines = [f"ep[{epoch}/{total}] Train: {summary(train)} || Val: {summary(val)}"]
-    for name in train["per_class"]:
-        t, v = train["per_class"][name], val["per_class"][name]
-        lines.append(f"  {name}: Train class acc {t['accuracy']:.4f}, P {t['precision']:.4f}, R {t['recall']:.4f}, F1 {t['f1']:.4f}"
-                     f" | Val class acc {v['accuracy']:.4f}, P {v['precision']:.4f}, R {v['recall']:.4f}, F1 {v['f1']:.4f} (n={v['support']})")
+    lines[0] += f" | Precision {val['macro_precision']:.2%} | F1 {val['macro_f1']:.2%}"
+    lines.append("Val class acc: " + " | ".join(
+        f"{name} {metrics['accuracy']:.2%}" for name, metrics in val["per_class"].items()
+    ))
     return "\n".join(lines)
